@@ -1,0 +1,202 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(46, 44, 40);
+    background: linear-gradient(to right, #7f7f7f, #823800);
+    color: #333;
+    margin: 0;
+    padding: 0px;
+    height: 100vh;
+} */
+
+/* header {
+    background-size: cover; 
+    background-position: center; 
+    margin: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; 
+    padding: 10px; 
+} */
+
+
+/* .titulo {
+    display: flex;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 10px;
+    border: hidden rgb(0, 0, 0);
+    color: darkgoldenrod;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+} */
+
+
+/* nav {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: #333;
+}
+
+nav a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border: solid 1px;
+    padding: 10px 15px;
+    margin: 30px;
+    border-radius: 15px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+    color: darkgoldenrod;
+    transition: ease;
+} */
+
+
+
+/* .contenedor-inicio {
+    display: flex;
+    justify-content: center;
+}
+
+.entrena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: darkgoldenrod;
+    border: #000 hidden;
+    border-radius: 30px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    background-image: url(ven-entrena.jpg);
+    height: 400px;
+    width: 1500px;  
+}
+
+
+.contenedor-footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer { 
+    display: flex;
+    justify-content: center;
+    background: dimgray; 
+    color: #ffffff;  
+    padding: 10px;  
+    position: relative;
+    margin-top: 10px; 
+    border-radius: 20px;
+    width: 1000px; 
+} */
+
+
+
+body { 
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-image: url(fondoss.jpg);
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #fefefe;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+nav a:hover {
+    color: darkgoldenrod;
+    transition: ease;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #c18825;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(8px); /* Ajusta el nivel de desenfoque */
+    z-index: -1;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 0px;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    color: #c18825;
+    text-shadow: 10px 8px 4px rgba(0, 0, 0, 0.5);
+}
+.titulo-grande {
+    margin-bottom: 0px;
+}
+.titulo-pequeño {
+    margin-top: 0px;
+}
+.registro {
+    width: 20%;
+    background-color: #5b5959;
+    border: none; /* Sin bordes */
+    color: #c18825; /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    font-family: 'Roboto';
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cursor de mano al pasar */
+    border-radius: 12px; /* Bordes redondeados */
+}
+.registro:hover {
+    background-color: #e2e2e2; /* Color de fondo al pasar el ratón */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra al pasar el ratón */
+    transition: ease-in 0.6s;
+}
+
+.registro:active {
+    background-color: #101110; /* Color de fondo al hacer clic */
+    box-shadow: 0 5px #666; /* Sombra al hacer clic */
+}
