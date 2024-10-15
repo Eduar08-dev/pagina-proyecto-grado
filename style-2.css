@@ -157,9 +157,10 @@ main {
 .contenedor-redes {
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: 40px;
     display: flex;
     z-index: 1001;
+    gap: 30px;
 }
 
 .background {
