@@ -105,11 +105,12 @@ body {
     min-height: 100vh;
     width: 100%;
     margin: 0;
-    background-image: url(fondoss.jpg);
+    background-image: url(xd.jpg);
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio */
 }
 
 nav {
+
     display: flex;
     justify-content: center;
     position: fixed;
@@ -118,10 +119,9 @@ nav {
     right: 0;
     padding: 10px 0;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: solid 1px white;
-    border-radius: 50px;
+    box-shadow: 0 0 5px;
 }
+    
 nav a{
     display: flex;
     text-decoration: none;
@@ -131,35 +131,52 @@ nav a{
     font-family: 'Roboto';
     font-size: 16px;
     transition: color 0.3s ease;
+    transition: transform 0.4s;
 }
 nav a:hover {
     color: darkgoldenrod;
-    transition: ease;
-}
-.navegacion {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    color: #c18825;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    padding: 10px 15px;
-    border-radius: 5px;
+    transform: scale(1.1)
 }
 
 main {
     margin-top: 60px;
 }
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end ;
+}
+
 .contenedor-redes {
     position: fixed;
     top: 10px;
-    right: 40px;
+    right: 10px;
     display: flex;
-    z-index: 1001;
-    gap: 30px;
+    justify-content: center ;
+    gap: 40px; /* Espacio entre los iconos */
 }
 
+.facebook-icono img {
+    width: 5vh; /* Tamaño de los iconos */
+    height: 5vh; /* Tamaño de los iconos */
+    transition: transform 0.4s;
+}
+
+.facebook-icono:hover img {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+}
+
+.instagram-icono img {
+    width: 5vh; /* Tamaño de los iconos */
+    height: 5vh; /* Tamaño de los iconos */
+    transition: transform 0.4s;
+}
+
+.instagram-icono:hover img {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+}
+ 
 .background {
     position: absolute;
     top: 0;
@@ -232,7 +249,7 @@ main {
 .registro:hover {
     background-color: #e2e2e2; /* Color de fondo al pasar el ratón */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra al pasar el ratón */
-    transition: ease-in 0.6s;
+    transition: ease 0.6s;
 }
 
 .registro:active {
@@ -243,7 +260,7 @@ main {
 
 .cuenta-creada {
     font-size: 3vh;
-
+    text-shadow: #101110;
 }
 
 @media (max-width: 768px) {
@@ -298,9 +315,9 @@ main {
     }
 }
 .inicia-sesion:hover {
-    background-color: #e2e2e2; /* Color de fondo al pasar el ratón */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra al pasar el ratón */
-    transition: ease-in 0.6s;
+    background-color: #e2e2e2; 
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2); 
+    transition: ease 0.6s;
 }
 
 .inicia-sesion:active {
