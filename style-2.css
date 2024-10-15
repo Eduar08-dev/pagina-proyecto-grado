@@ -106,10 +106,7 @@ body {
     width: 100%;
     margin: 0;
     background-image: url(fondoss.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio */
 }
 
 nav {
@@ -173,7 +170,13 @@ main {
     z-index: -1;
 }
 
-.titulo{
+.titulo-grande {
+    margin-bottom: 0px;
+}
+.titulo-pequeño {
+    margin-top: 0px;
+}
+.titulo {
     display: flex;
     justify-content: center;
     box-sizing: content-box;
@@ -181,32 +184,50 @@ main {
     align-items: center;
     margin-top: 10%;
     margin-bottom: 0px;
+    font-size: 50px;
     font-family: 'Montserrat';
     color: #c18825;
     text-shadow: 10px 8px 4px rgba(0, 0, 0, 0.5);
 }
 .titulo-grande {
-    font-size: 3rem;
     margin-bottom: 0px;
 }
 .titulo-pequeño {
-    font-size: 2rem;
     margin-top: 0px;
 }
 .registro {
-    display: block;
     width: 20%;
     background-color: #5b5959;
-    border: none; /* Sin bordes */
-    color: #c18825; /* Color del texto */
-    padding: 15px 32px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 16px; /* Tamaño de fuente */
+    border: none;
+    color: #c18825;
+    padding: 10px 20px; /* Cambia el espaciado interno a una unidad relativa */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em; /* Cambia el tamaño de fuente a una unidad relativa */
     font-family: 'Roboto';
-    margin: 4px 2px; /* Margen */
-    cursor: pointer; /* Cursor de mano al pasar */
-    border-radius: 12px; /* Bordes redondeados */
+    margin: 2vh 1vw; /* Cambia el margen a una unidad relativa */
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/* Media queries para ajustar el tamaño del botón según la pantalla */
+@media (max-width: 768px) {
+    .registro {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .registro {
+    
+        font-size: 1em;
+    }
+}
+/* Agregamos una media query para pantallas más grandes */
+@media (min-width: 1200px) {
+    .registro {
+        font-size: 0.5em;
+    }
 }
 .registro:hover {
     background-color: #e2e2e2; /* Color de fondo al pasar el ratón */
@@ -219,3 +240,70 @@ main {
     box-shadow: 0 5px #666; /* Sombra al hacer clic */
 }
 
+
+.cuenta-creada {
+    font-size: 3vh;
+
+}
+
+@media (max-width: 768px) {
+    .cuenta-creada {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .cuenta-creada {
+        font-size: 1em;
+    }
+}
+/* Agregamos una media query para pantallas más grandes */
+@media (min-width: 1200px) {
+    .cuenta-creada {
+        font-size: 0.5em;
+    }
+}
+
+/* boton de inicio de sesion*/
+
+.inicia-sesion {
+    width: 30%; /* Cambia el ancho a una unidad relativa */
+    background-color: #5b5959;
+    border: none;
+    color: #c18825;
+    padding: 10px 20px; /* Cambia el espaciado interno a una unidad relativa */
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.5em; /* Cambia el tamaño de fuente a una unidad relativa */
+    font-family: 'Roboto';
+    margin: 2vh 1vw; /* Cambia el margen a una unidad relativa */
+    cursor: pointer;
+    border-radius: 12px;
+}
+@media (max-width: 768px) {
+    .inicia-sesion {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .inicia-sesion {
+        font-size: 1em;
+    }
+}
+/* Agregamos una media query para pantallas más grandes */
+@media (min-width: 1200px) {
+    .inicia-sesion {
+        font-size: 0.5em;
+    }
+}
+.inicia-sesion:hover {
+    background-color: #e2e2e2; /* Color de fondo al pasar el ratón */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra al pasar el ratón */
+    transition: ease-in 0.6s;
+}
+
+.inicia-sesion:active {
+    background-color: #101110; /* Color de fondo al hacer clic */
+    box-shadow: 0 5px #666; /* Sombra al hacer clic */
+}
