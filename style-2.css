@@ -106,7 +106,7 @@ body {
     width: 100%;
     margin: 0;
     background-image: url(xd.jpg);
-    background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio */
+    background-size: cover;
 }
 
 nav {
@@ -304,3 +304,25 @@ main {
     background-color: #101110; /* Color de fondo al hacer clic */
     box-shadow: 0 5px #666; /* Sombra al hacer clic */
 }
+
+.contenedor-redes {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .facebook.icon {
+    width: 5px;
+    height: 5px;
+  }
+  
+  .instagram.icon {
+    width: 1em;
+    height: 1em;
+  }
