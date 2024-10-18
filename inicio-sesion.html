@@ -4,30 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro Fitness Total Gym</title>
-    <link rel="stylesheet" href="inicio-sesion.css ">
+    <link rel="stylesheet" href="inicio-sesion.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Lora|Montserrat&display=swap">
+    <script src="https://kit.fontawesome.com/6fda19bdf3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="navegacion">
         <nav>
-            <a href="">Sobre nosotros</a>
-            <a href="">Registra tu entrenamiento</a>
-            <a href="">Noticias y articulos</a>
-            <a href="">Contacto</a>
+            <a href="">
+                <i class="fa-solid fa-user-group"></i>
+                Sobre nosotros </a>
+            <a href="">
+                <i class="fa-solid fa-medal"></i>
+                Registra tu entrenamiento </a>
+            <a href="">
+                <i class="fa-solid fa-file-lines"></i>
+                Noticias y articulos </a>
+            <a href="">
+                <i class="fa-solid fa-phone-volume"></i>
+                Contacto</a>
+                
+                <div class="contenedor-redes">
+                    <a href="" id="facebook-icono">
+                        <img src="fb-ico.png" alt="">
+                    </a>
+                    <a href="" id="instagram-icono">
+                      <img src="ig-ico.png" alt="">
+                    </a>
+                </div>
         </nav>
- 
     </div>
 
     <form id="registroForm">
-        <h2>Registro de Usuario</h2>
+        <h2>REGISTRO DE USUARIO</h2>
 
-        <input type="texto" id="nombre" placeholder="Nombre" required>
+        <input type="texto" id="nombre" placeholder="Introduce tu nombre" required>
 
-        <input type="apellido" id="apellido" placeholder="Apellido" required>
+        <input type="apellido" id="apellido" placeholder="Intrudoce tu apellido" required>
 
-        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="email" id="email" placeholder="Introduce tu Correo electrónico" required>
 
-        <input type="contraseña" id="contraseña" placeholder="Contraseña" required>
+        <input type="contraseña" id="contraseña" placeholder="Introduce tu Contraseña" required>
 
         <button type="submit">Registrarse</button>
     </form>
