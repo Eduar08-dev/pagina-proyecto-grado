@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
+    z-index: -1;
 }
 
 /* Navegación */
@@ -70,12 +71,11 @@ form {
     align-content: center;
     justify-content: center;
     padding: 40px;
-    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 400px;
+    max-width: 406px;
     width: 100%;
 }
 
@@ -100,15 +100,16 @@ input {
     display: block;
     width: 100%;
     padding: 10px;
-    margin-bottom: 30px;
-    border: solid 1px;
-    border-radius: 40px;
-    text-align: center;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     background-color: transparent;
-    font-weight: 600;
-    color: darkgoldenrod;
+    color: #ffffff;
+    margin-bottom: 40px;
     font-size: 16px;
-    transition: border-color 0.3s ease;
+}
+
+input::placeholder{
+    color: whitesmoke;
 }
 
 input:focus {
@@ -132,6 +133,15 @@ input:not(:placeholder-shown) + label {
     color: darkgoldenrod;
 }
 
+.mostrar-contraseña {
+    position: absolute;
+    background: transparent;
+    width: 1px;
+    height: 1px;
+    right: 40px;
+    bottom: 160px;
+}
+
 button {
     background-color: darkgoldenrod;
     color: white;
@@ -147,6 +157,7 @@ button {
 button:hover {
     background-color: #b8860b;
     transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.5);
 }
 
 button:active {
@@ -163,6 +174,23 @@ button:active {
         transform: scale(2);
         opacity: 0;
     }
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centro img {
+    max-width: 470px;
+    width: 100%;
+    filter: blur(1.5px);
+    margin: 0;
+}
+.logro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 button::after {
@@ -235,18 +263,37 @@ button:focus:not(:active)::after {
         width: 25px;
         height: 25px;
     }
+    .logro {
+        display: none;
+    
+    }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 890px) {
+
     .contenedor-redes {
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-        gap: 10px;
-        }
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    gap: 10px;
+
+    }
+
+    form {
+     padding: 20px;
+     width: 100%;
+     border-radius: 30px;
+
+    }
+
     .contenedor-redes img {
      width: 40px;
      height: 40px;
+
+    }
+
+    .logro{
+        display: none;
     }
 }
 
@@ -260,7 +307,8 @@ button:focus:not(:active)::after {
     }
     form {
         padding: 20px;
-        width: 80%;
+        width: 100%;
+        border-radius: 30px;
     }
 
     h2 {
