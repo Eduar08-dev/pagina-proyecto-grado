@@ -74,17 +74,13 @@ form {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 406px;
     width: 100%;
 }
 
-form:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-}
-
 h2 {
+    display: flex;
+    text-align: center;
     color: #ffffff;
     margin-bottom: 70px;
     font-size: 2em;
@@ -101,13 +97,18 @@ input {
     width: 100%;
     padding: 10px;
     border: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgb(255, 255, 255);
     background-color: transparent;
     color: #ffffff;
     margin-bottom: 40px;
+    font-weight: 500;
     font-size: 16px;
+    transition: ease-in-out 0.5s;
 }
+input:hover{
+    transform: translate(5px);
 
+}
 input::placeholder{
     color: whitesmoke;
 }
@@ -115,6 +116,11 @@ input::placeholder{
 input:focus {
     outline: none;
     border-color: darkgoldenrod;
+}
+.icono {
+    position: relative;
+    left: 200px;
+    top: 30px;color: aliceblue;
 }
 
 label {
@@ -135,7 +141,7 @@ input:not(:placeholder-shown) + label {
 
 .mostrar-contraseña {
     position: absolute;
-    background: transparent;
+    background: none;
     width: 1px;
     height: 1px;
     right: 40px;
@@ -147,9 +153,11 @@ button {
     color: white;
     padding: 12px 24px;
     border: none;
-    border-radius: 25px;
+    width: 70%;
+    border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 540;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 20px;
 }
@@ -157,11 +165,14 @@ button {
 button:hover {
     background-color: #b8860b;
     transform: scale(1.05);
-    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
 }
 
 button:active {
-    transform: scale(0.95);
+    transform: scale(1.1);
+}
+cursor {
+    cursor: pointer;
 }
 
 /* Efecto de onda al hacer clic en el botón */
@@ -206,9 +217,20 @@ button::after {
     transform: scale(1, 1) translate(-50%);
     transform-origin: 50% 50%;
 }
+.registroForm {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
-button:focus:not(:active)::after {
-    animation: ripple 1s ease-out;
+.registroForm i {
+    position: absolute;
+    left: 10px;
+    pointer-events: none; /* Para que el ícono no intercepte clics */
+}
+
+.registroForm input {
+    padding-left: 30px; /* Espacio para el ícono */
 }
 
 /* Redes sociales */
@@ -263,9 +285,10 @@ button:focus:not(:active)::after {
         width: 25px;
         height: 25px;
     }
-    .logro {
-        display: none;
-    
+    .icono {
+        position: relative;
+        left: 200px;
+        top: 30px;color: aliceblue;
     }
 }
 
@@ -291,10 +314,12 @@ button:focus:not(:active)::after {
      height: 40px;
 
     }
-
-    .logro{
-        display: none;
+    .icono {
+        position: relative;
+        left: 200px;
+        top: 30px;color: aliceblue;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -307,7 +332,7 @@ button:focus:not(:active)::after {
     }
     form {
         padding: 20px;
-        width: 100%;
+        width: 80%;
         border-radius: 30px;
     }
 
@@ -334,4 +359,9 @@ button:focus:not(:active)::after {
         width: 40px;
         height: 40px;
         }
+     .icono {
+      position: relative;
+      left: 150px;
+      top: 30px;color: aliceblue;
+    }
 }
