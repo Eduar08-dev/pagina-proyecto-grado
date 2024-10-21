@@ -123,7 +123,7 @@ input:focus {
         justify-content: center;
 }
 .imagen-registro {
-    filter: blur(1.5px);
+    filter: blur(1px);
     margin: 0;
     margin-top: 70px;
     height: 650px;
@@ -277,6 +277,9 @@ button::after {
         padding: 10px 20px;
         font-size: 14px;
     }
+    .contenedor-imagen {
+        display: none;
+    }
 
     .contenedor-redes img {
         width: 25px;
@@ -306,6 +309,9 @@ button::after {
     bottom: 20px;
     gap: 10px;
 
+    }
+    .contenedor-imagen {
+        display: none;
     }
 
     form {
@@ -385,6 +391,10 @@ button::after {
         height: 1px;
         right: 34px;
         bottom: 120px;
+    }
+
+    .contenedor-imagen {
+        display: none;
     }
     
 }
