@@ -70,12 +70,12 @@ form {
     align-items: center;
     align-content: center;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
+    margin-top: 70px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     max-width: 406px;
-    width: 100%;
 }
 
 h2 {
@@ -100,7 +100,7 @@ input {
     border-bottom: 2px solid rgb(255, 255, 255);
     background-color: transparent;
     color: #ffffff;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 16px;
     transition: ease-in-out 0.5s;
@@ -117,6 +117,19 @@ input:focus {
     outline: none;
     border-color: darkgoldenrod;
 }
+.registro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.imagen-registro {
+    filter: blur(1.5px);
+    margin: 0;
+    margin-top: 70px;
+    height: 650px;
+    max-width: 406px;
+}
+
 .icono {
     position: relative;
     left: 200px;
@@ -144,8 +157,8 @@ input:not(:placeholder-shown) + label {
     background: none;
     width: 1px;
     height: 1px;
-    right: 40px;
-    bottom: 160px;
+    right: 12px;
+    bottom: 120px;
 }
 
 button {
@@ -185,23 +198,6 @@ cursor {
         transform: scale(2);
         opacity: 0;
     }
-}
-.centro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.centro img {
-    max-width: 470px;
-    width: 100%;
-    filter: blur(1.5px);
-    margin: 0;
-}
-.logro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
 button::after {
@@ -266,6 +262,7 @@ button::after {
     }
     form {
         padding: 30px;
+        max-width: max-content;
     }
 
     h2 {
@@ -290,6 +287,15 @@ button::after {
         left: 200px;
         top: 30px;color: aliceblue;
     }
+    .mostrar-contraseña {
+        position: absolute;
+        background: none;
+        width: 1px;
+        height: 1px;
+        right: 34px;
+        bottom: 120px;
+    }
+    
 }
 
 @media (max-width: 890px) {
@@ -304,9 +310,8 @@ button::after {
 
     form {
      padding: 20px;
-     width: 100%;
      border-radius: 30px;
-
+     max-width: max-content;
     }
 
     .contenedor-redes img {
@@ -319,6 +324,15 @@ button::after {
         left: 200px;
         top: 30px;color: aliceblue;
     }
+    .mostrar-contraseña {
+        position: absolute;
+        background: none;
+        width: 1px;
+        height: 1px;
+        right: 34px;
+        bottom: 120px;
+    }
+    
 
 }
 
@@ -364,4 +378,13 @@ button::after {
       left: 150px;
       top: 30px;color: aliceblue;
     }
+    .mostrar-contraseña {
+        position: absolute;
+        background: none;
+        width: 1px;
+        height: 1px;
+        right: 34px;
+        bottom: 120px;
+    }
+    
 }
